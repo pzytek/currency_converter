@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>Currency Converter</header>
+      <div class="amount-group">
+        <label for="amount"
+          >Enter Amount:
+          <input id="amount" name="amount" type="number" value="1" />
+        </label>
+      </div>
+      <div class="currency-group">
+        <label for="currency-first">From:</label>
+        <select id="currency-first">
+          <option value="">Select first currency</option>
+          <option value="PLN">PLN</option>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+      <div class="currency-group">
+        <label for="currency-second">To:</label>
+        <select id="currency-second">
+          <option value="">Select second currency</option>
+          <option value="PLN">PLN</option>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+      <div class="rate-group">
+        <label for="rate"
+          >Current Rate:
+          <output id="rate" name="rate" type="text"></output>
+        </label>
+      </div>
+      <div class="result-group">
+        <label for="result"
+          >Result: <output id="result" name="result" type="number"></output>
+        </label>
+      </div>
+      <div>
+        <button id="exchange">Exchange</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
